@@ -4,7 +4,7 @@
 }
 
 body {
-  /* font-family: "Varela Round", "Quicksand", sans-serif; */
+  font-family: "Varela Round", "Quicksand", sans-serif;
   background: url(background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,8 +72,8 @@ h1 {
 footer {
   margin: 2em auto;
   text-align: center;
-  /* font-family: "Varela Round", "Quicksand", sans-serif; */
-  font-family: sans-serif;
+  font-family: "Varela Round", "Quicksand", sans-serif;
+  /* font-family: sans-serif; */
   color: white;
 }
 
@@ -89,7 +89,7 @@ p span {
 }
 p {
   font-size: 22px;
-  font-family: cursive;
+  /* font-family: cursive; */
   font-weight: 540;
 }
 .ullu {
@@ -194,5 +194,6 @@ p {
     font-size: 0.9em;
   }
 }
+
 
 
