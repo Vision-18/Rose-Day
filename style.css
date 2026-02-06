@@ -109,32 +109,32 @@ body {
 .deadPetals > div {
   position: absolute;
   background: #d52d58;
-  width: 20px;
-  height: 15px;
+  width: 40px;
+  height: 60px;
   top: 120px;
-  border-radius: 0px 30px 0px 30px;
-  box-shadow: 0px 0px 30px rgba(245, 148, 184, 0.5);
+  border-radius: 15px 30px 15px 30px;
+  box-shadow: 0px 0px 40px rgba(245, 148, 184, 0.6);
   transition: all 0.5s ease-out;
 }
 .deadPetals > div:nth-child(1) {
   left: 80px;
   transform: rotate(-30deg);
-  animation: falling 10s 4s ease-in-out infinite;
+  animation: falling 6s linear -2s infinite;
 }
 .deadPetals > div:nth-child(2) {
   left: 101px;
-  transform: rotate(-30deg);
-  animation: falling 20s 8s ease-in-out infinite;
+  transform: rotate(-40deg);
+  animation: falling 8s linear -4s infinite;
 }
 .deadPetals > div:nth-child(3) {
   left: 79px;
-  transform: rotate(-30deg);
-  animation: falling 20s 12s ease-in-out infinite;
+  transform: rotate(-20deg);
+  animation: falling 7s linear -1s infinite;
 }
 .deadPetals > div:nth-child(4) {
   left: 92px;
-  transform: rotate(-30deg);
-  animation: falling 20s 16s ease-in-out infinite;
+  transform: rotate(-50deg);
+  animation: falling 9s linear -3s infinite;
 }
 
 .leaves > div:nth-last-child(1) {
@@ -256,13 +256,16 @@ body {
   }
 }
 @keyframes falling {
-  20% {
-    top: 335px;
-    background: #9d193b;
-    box-shadow: 0px 0px 0px rgba(245, 148, 184, 0);
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(220px) rotate(15deg);
+    opacity: 1;
   }
   100% {
-    top: 335px;
+    transform: translateY(300px) rotate(25deg);
     opacity: 0;
   }
 }
@@ -328,9 +331,9 @@ body {
   }
 
   .deadPetals > div {
-    width: 15px;
-    height: 12px;
-    top: 90px;
+    width: 30px;
+    height: 45px;
+    top: 100px;
   }
 
   .deadPetals > div:nth-child(1) {
@@ -457,9 +460,9 @@ body {
   }
 
   .deadPetals > div {
-    width: 12px;
-    height: 10px;
-    top: 72px;
+    width: 24px;
+    height: 36px;
+    top: 82px;
   }
 
   .deadPetals > div:nth-child(1) {
@@ -545,5 +548,4 @@ body {
   .text a {
     font-size: 13px;
   }
-
 }*/
